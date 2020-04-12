@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Airway reservation form </title> <!-- title of page -->
+<link rel="stylesheet"  href="ourpage.css"> <!-- linking css -->
+<script type="text/javascript"> <!-- linking java script-->
+function fn1()
+{
+     var rd1 = document.getElementById("rd1"); < !-- radio button  1-->
+     var rd2 = document.getElementById("rd2"); <!-- radio button  2-->
+     var rd3 = document.getElementById("rd3"); <!-- radio button  3-->
+       if(rd1.checked==true)
+            alert( " Payment method selected is : "+rd1.value); <!-- alert javascript -->
+       else if(rd2.checked==true)
+            alert("Payment method selected is :"+rd2.value);
+       else if(rd3.checked==true)
+            alert("Payment method selected is :"+rd3.value)
+       else
+            alert("select payment method");
+}
+</script>
+    </head>
+<style>
+</style>
+
+     <body>
+    <form name="Airway">
+        <center>
+        <h1><marquee bgcolor="pink">Airway Reservation System </marquee> </h1> <!-- heading -->
+     <table>
+     <tr>
+         <td bgcolor="pink" style="font-size:200%;"><b>From:</b></td>
+         <td><input type="text" name=""Airway"</td>
+         </tr>
+     <tr>
+     <td bgcolor="pink" style="font-size:200%;"><b>To:</b></td>
+     <td><input type="text" name="txt2"</td>
+             </tr>
+        <tr>
+            <td bgcolor="pink" style="font-size:200%;"><b>Name:</b></td>
+            <td><input type="text" name=""</td></tr>
+         <tr>
+         <td bgcolor="pink" style="font-size:200%;"><b>Age:</b></td>
+         <td><input type="number" name=""</td>
+         </tr> 
+         <tr>
+         <td bgcolor="pink" style="font-size:200%;"><b>Address:</b></td>
+
+         <td><input type="text" name=""</td></tr> 
+          <tr>
+          <td bgcolor="pink" style="font-size:200%;"><b>Payment options:</b></td>
+<label for="Departure"><p2 style="font-size:200%;  background-color: lightblue">Departure:</p2>
+</label>
+<input type="date" id="Departure" name="Departure"> <!-- departure with calender -->
+<br/><br/>
+<label for="Return"><p2 style="font-size:200%; background-color: lightblue">Return:</p2>
+</label>
+<input type="date" id="Return" name="Return">
+<br/><br/><br/><br/><br/><br/>
+         <td> 
+<!-- radio buttons -->
+<input id="rd1" name="grp1" type="radio"
+value="Credit card"><b>Credit card</b></input><br>
+<input id="rd2" name="grp1" type="radio"
+value="Debit card"><b>Debit card</b></input><br>
+<input id="rd3" name="grp1" type="radio"
+value="Wallet"><b>Wallet</b></input><br/>
+<br/>
+        </br><br/>
+        </td>
+          
+          <tr>
+           <td><button onclick="fn1()" id="btn1">submit</button></td>
+           <td><input type="submit" value="Cancel"</td></tr>   
+         </table>   
+    </body>
+</html>
