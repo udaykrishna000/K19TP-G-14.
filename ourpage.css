@@ -1,0 +1,9 @@
+body
+ {
+     background-image: url('aero.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+table,tr,td {
+border : 1px solid black;
+}
